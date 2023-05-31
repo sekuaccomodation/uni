@@ -1,0 +1,191 @@
+body {
+  background-color: beige;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.container {
+  text-align: center;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  animation: rainbow-border 10s infinite;
+}
+
+@keyframes rainbow-border {
+  0% {
+    border: 2px solid red;
+  }
+  14% {
+    border: 2px solid orange;
+  }
+  28% {
+    border: 2px solid yellow;
+  }
+  42% {
+    border: 2px solid green;
+  }
+  57% {
+    border: 2px solid blue;
+  }
+  71% {
+    border: 2px solid indigo;
+  }
+  85% {
+    border: 2px solid violet;
+  }
+  100% {
+    border: 2px solid red;
+  }
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+  transform: scale(1.1);
+}
+
+.image-item p {
+  font-weight: bold;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.image-item:hover p {
+  color: #4caf50;
+}
+
+.form-footer {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.form-footer a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+.form-footer i {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  form {
+    margin-top: 10px;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+    max-width: 250px;
+    margin-bottom: 8px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  .images {
+    margin-top: 30px;
+  }
+
+  .image-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px;
+  }
+
+  .image-item img {
+    border-radius: 5px;
+  }
+
+  .form-footer {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}

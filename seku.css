@@ -1,0 +1,295 @@
+/* seku.css */
+
+/* General Styles */
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+
+header {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+a.active {
+  color: #ff6600;
+}
+
+a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+a:hover:before {
+  background-color: #ff6600;
+}
+
+/* Main Content */
+
+main {
+  padding: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hostel-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#virtual-tour iframe {
+  width: 100%;
+  height: 300px;
+  transition: transform 0.3s;
+}
+
+#virtual-tour iframe:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Text Animations */
+
+.animated-text {
+  opacity: 0;
+  animation: fade-in 0.8s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Colorful Headings and Highlights */
+
+h1 {
+  color: #ff6600;
+}
+
+.highlight {
+  background-color: #ffebcc;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Imagery and Text Integration */
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Interactive Infographics or Data Visualizations */
+
+.chart-container {
+  margin: 20px 0;
+}
+
+/* Parallax Scrolling */
+
+.parallax-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+
+.parallax-section .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* Creative Formatting */
+
+.irregular-alignment {
+  text-align: justify;
+}
+
+.asymmetrical-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.asymmetrical-layout .text-content {
+  max-width: 100%;
+}
+
+.asymmetrical-layout img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Microinteractions */
+
+.hover-effect {
+  transition: transform 0.3s;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltip-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Storytelling Techniques */
+
+.story-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.story-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* White Space */
+
+p {
+  margin-bottom: 15px;
+  text-align: justify;
+  line-height: 1.6;
+}
